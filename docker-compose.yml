@@ -1,0 +1,17 @@
+version: '3.8'
+networks:
+  default:
+    name: local_shared_network
+    external: true
+services:
+  scraper:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    ports:
+      - 8001:8001
+
+
+
+
+
